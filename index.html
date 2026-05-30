@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Imad Khan | Portfolio</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<!-- CSS -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="nav-left">
+    <img src="Assets/my_pic.jpg" alt="Imad Khan">
+    <h3>Imad Khan</h3>
+  </div>
+
+  <div class="nav-links">
+    <a href="#profile">Profile</a>
+    <a href="#skills">Skills</a>
+    <a href="#academic">Academic</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <button id="themeBtn">🌙</button>
+</nav>
+
+<!-- PROFILE SECTION -->
+<section id="profile" class="container profile">
+  <img src="Assets/my_pic.jpg" alt="Imad Khan">
+  <h1>Imad Khan</h1>
+  <div id="introText"></div>
+
+  <div class="cv-buttons">
+    <a href="Assets/cv.pdf" target="_blank" class="btn view">View CV</a>
+    <a href="Assets/cv.pdf" download class="btn download">Download CV</a>
+  </div>
+</section>
+
+<!-- SKILLS SECTION -->
+<section id="skills" class="container">
+  <h2>Skills</h2>
+
+  <!-- SKILLS SEARCH BAR -->
+  <input
+    type="text"
+    id="skillSearch"
+    placeholder="Search skills..."
+  >
+
+  <div class="skill" data-skill="HTML">
+    <div class="bar">
+      <div class="fill" data="90"></div>
+    </div>
+    <span>HTML</span>
+  </div>
+
+  <div class="skill" data-skill="CSS">
+    <div class="bar">
+      <div class="fill" data="85"></div>
+    </div>
+    <span>CSS</span>
+  </div>
+
+  <div class="skill" data-skill="JavaScript">
+    <div class="bar">
+      <div class="fill" data="75"></div>
+    </div>
+    <span>JavaScript</span>
+  </div>
+
+  <div class="skill" data-skill="C Language">
+    <div class="bar">
+      <div class="fill" data="60"></div>
+    </div>
+    <span>C Language</span>
+  </div>
+
+  <div class="skill" data-skill="MS Excel">
+    <div class="bar">
+      <div class="fill" data="50"></div>
+    </div>
+    <span>MS Excel</span>
+  </div>
+</section>
+
+<!-- ACADEMIC SECTION -->
+<section id="academic" class="container">
+  <h2>Academic Record</h2>
+
+  <!-- ACADEMIC SEARCH BAR -->
+  <input
+    type="text"
+    id="academicSearch"
+    placeholder="Search academic record..."
+  >
+
+  <div class="table-wrap">
+    <table id="academicTable">
+      <tr>
+        <th>Level</th>
+        <th>Institute</th>
+        <th>Year</th>
+        <th>Result</th>
+      </tr>
+      <tr>
+        <td>Matric</td>
+        <td>NBHPH School</td>
+        <td>2022</td>
+        <td>88%</td>
+      </tr>
+      <tr>
+        <td>Intermediate</td>
+        <td>GHSSSS Nisatta</td>
+        <td>2024</td>
+        <td>84%</td>
+      </tr>
+      <tr>
+        <td>BS Software Engineering</td>
+        <td>UET Peshawar</td>
+        <td>2025–2029</td>
+        <td>In Progress</td>
+      </tr>
+    </table>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="container">
+  <h2>Contact Me</h2>
+
+  <input id="nameInput" type="text" placeholder="Your Name">
+  <input id="emailInput" type="email" placeholder="Your Email">
+  <textarea id="messageInput" placeholder="Your Message"></textarea>
+
+  <button class="send">Send Message</button>
+  <div id="msgStatus"></div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  © 2025 Imad Khan
+</footer>
+
+<!-- JAVASCRIPT -->
+<script src="script.js"></script>
+</body>
+</html>

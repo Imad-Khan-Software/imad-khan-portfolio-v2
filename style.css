@@ -1,0 +1,92 @@
+:root{
+  --bg:#f4f6f8;
+  --card:#ffffff;
+  --text:#1f2937;
+  --accent:#2563eb;
+  --muted:#6b7280;
+  --green:#10b981;
+  --red:#ef4444;
+}
+
+body.dark{
+  --bg:#0f172a;
+  --card:#1e293b;
+  --text:#e5e7eb;
+  --accent:#38bdf8;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:Poppins,sans-serif;background:var(--bg);color:var(--text);}
+
+nav{
+  position:sticky;top:0;z-index:100;
+  display:flex;justify-content:space-between;align-items:center;
+  padding:12px 6%;background:var(--card);
+  box-shadow:0 8px 20px rgba(0,0,0,.1);
+}
+
+.nav-left{display:flex;align-items:center;gap:10px;}
+.nav-left img{width:45px;border-radius:50%;}
+
+.nav-links a{
+  margin:0 12px;text-decoration:none;color:var(--text);
+}
+
+#themeBtn{
+  background:var(--accent);color:#fff;
+  border:none;padding:8px 14px;border-radius:20px;
+}
+
+.container{
+  max-width:1000px;margin:40px auto;
+  background:var(--card);padding:40px;
+  border-radius:18px;
+  box-shadow:0 15px 35px rgba(0,0,0,.1);
+}
+
+.profile{text-align:center;}
+.profile img{width:160px;border-radius:50%;}
+
+.cv-buttons{margin-top:20px;}
+.btn{
+  display:inline-block;margin:8px;padding:12px 25px;
+  border-radius:25px;text-decoration:none;color:#fff;
+}
+.view{background:var(--green);}
+.download{background:var(--accent);}
+
+.skill{margin:25px 0;}
+.bar{background:#e5e7eb;border-radius:20px;overflow:hidden;}
+.fill{height:14px;width:0;background:linear-gradient(90deg,var(--accent),#22d3ee);transition:1.5s;}
+.skill span{text-align:center;display:block;margin-top:8px;}
+
+table{width:100%;border-collapse:collapse;}
+th,td{padding:12px;border-bottom:1px solid #ccc;text-align:left;}
+
+#academicSearch{
+  width:60%;padding:10px;margin:15px 0;
+  border-radius:20px;border:1px solid #ccc;
+}
+
+input,textarea{
+  width:100%;padding:12px;margin:10px 0;
+  border-radius:8px;border:1px solid #ccc;
+}
+
+button.send{
+  background:var(--accent);color:#fff;
+  border:none;padding:12px 30px;border-radius:25px;
+}
+
+#msgStatus{
+  margin-top:12px;
+  font-weight:600;
+  text-align:center;
+}
+
+footer{text-align:center;padding:20px;color:var(--muted);}
+
+@media(max-width:768px){
+  .nav-links{display:none;}
+  #academicSearch{width:100%;}
+}
