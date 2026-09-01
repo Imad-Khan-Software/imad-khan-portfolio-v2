@@ -1,7 +1,6 @@
 # Imad Khan Portfolio
 
 A responsive personal portfolio website built using HTML, CSS, and JavaScript.
-LIVE DEMO  https://imad-khan-software.github.io/imad-khan-portfolio-v2/
 
 ## Features
 
